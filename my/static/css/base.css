@@ -1,0 +1,399 @@
+body,footer,nav,div,span,p,h1,h2,h3,h4,h5,input,textarea,table,ul,li{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+	width: 100%;
+	display: block;
+}
+html,body{
+    font-family:arial,microsoft yahei,simsun,sans-self;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-width: 1200px;
+}
+
+li{
+    list-style-type: none;
+}
+a{
+    color: #666;
+    text-decoration: none;
+    outline: none;
+}
+a,div,span,li,p{
+    -webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+b,strong,h1,h2,h3,h4,h5{
+	font-weight: normal;
+}
+em,i{
+	font-style: normal;
+}
+button,input,textarea{
+    outline: none;
+    border: 1px solid #999;
+}
+.clearfloat:after{
+    display:block;
+    clear:both;
+    content:'';
+    visibility:hidden;
+    height:0
+ }
+/*header公用头部*/
+.header-box{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 97px;
+	background: #fff;
+	z-index: 1000;
+	box-shadow: 0px 0px 8px #888888;
+	transition: top .4s;
+	-moz-transition: top .4s; /* Firefox 4 */
+	-webkit-transition: top .4s; /* Safari 和 Chrome */
+	-o-transition: top .4s; /* Opera */
+}
+.header{
+	min-width: 1200px;
+	width: 90%;
+	height: 96px;
+	margin: 0 auto;
+}
+h1{
+	width: 27.5%;
+	height: 96px;
+	font-size: 20px;
+	color: #333;
+	float: left;
+}
+.header h1 img{
+	width: 70px;
+	height: 58px;
+	margin-top: 18px;
+	float: left;
+	background: url(../../src/assets/img/web/logo.png);
+	background-size: 100% 100%;
+}
+h1 .header-title{
+	float: left;
+	width: 260px;
+	height: 96px;
+	line-height: 20px;
+	padding-top: 28px;
+	padding-left: 12px;
+}
+h1 p:last-child{
+	width: 330px;
+	height: 34px;
+	font-size: 12px;
+	color: #666;
+	line-height: 34px;
+}
+.nav{
+	float: left;
+	width: 58%;
+	height: 96px;
+	margin-left: 6.3%;
+	margin-right: 0.5%;
+}
+.nav>li{
+	float: left;
+	width: auto;
+	height: 96px;
+	font-size: 16px;
+	color: #666;
+	margin: 0 3%;
+	line-height: 110px;
+	text-align: center;
+}
+.nav>li>div>span{
+	cursor: pointer;
+	display: inline-block;
+	width: auto;
+	height: 100%;
+}
+.nav>li:last-child{
+	margin-right: 0;
+}
+.nav>li:hover{
+	color: #02a0ea;
+	border-bottom: 3px solid #02a0ea;
+}
+.nav>li.active{
+	color: #02a0ea;
+	border-bottom: 3px solid #02a0ea;
+}
+.nav>li.active{
+	color: #02a0ea;
+	border-bottom: 3px solid #02a0ea;
+}
+.nav>li.active a{
+	color: #02a0ea;
+}
+.nav>li>a{
+	float: left;
+	width: 68px;
+	height: 96px;
+}
+.change-word{
+	float: right;
+	width: 90px;
+	height: 96px;
+}
+.change-word img{
+	float: left;
+	width: 20px;
+	height: 13px;
+	margin-top: 46px;
+}
+.change-word span{
+	float: left;
+	width: 50PX;
+	height: 96px;
+	padding: 45px 14px 0 6px;
+	line-height: 16px;
+	color: #666;
+	font-size: 12px;
+}
+.change-word b{
+	width: 0;
+	height: 0;
+	float: left;
+	border-left: 4px solid transparent;
+	border-right: 4px solid transparent;
+	border-top: 4px solid #666;
+	border-bottom: 4px solid transparent;
+	margin-top: 50px;
+}
+.change-word>a{
+	display: block;
+	width: auto;
+	height: 96px;
+	line-height: 108px;
+	float: left;
+	font-size: 14px;
+	color: #999;
+}
+.change-word>a.active{
+	color: #666;
+}
+.change-word>span{
+	display: block;
+	width: auto;
+	height: 96px;
+	line-height: 108px;
+	float: left;
+	font-size: 14px;
+	padding: 0 4px;
+}
+.nav2-bg{
+	position: fixed;
+	left: 0;
+	top: 96px;
+	width: 100%;
+	height: 286px;
+	background: #000;
+	opacity: 0.9;
+	z-index: 1000;
+}
+.nav2-bg-2{
+	height: 194px;
+}
+.nav2{
+	position: absolute;
+	left: 0;
+	top: 96px;
+	width: 100%;
+	height: 286px;
+	z-index: 1001;
+	color: #fff;
+	font-size: 14px;
+	padding: 0 5%;
+	justify-content: space-between;
+	display: flex;
+}
+.nav2>li{
+	text-align: left;
+	width: auto;
+	height: 100%;
+	margin-right: 1%;
+	padding: 0 30px;
+}
+.nav2>li>img{
+	display: block;
+	margin-top: 50px;
+	border-radius: 20px;
+}
+.nav2 h5{
+	font-size: 16px;
+	height: 36px;
+	line-height: 36px;
+}
+.nav2 h4{
+	font-size: 18px;
+	height: 66px;
+	line-height: 90px;
+	padding: 0 20px;
+}
+.nav3-box{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.nav3{
+	line-height: 34px;
+	width: auto;
+	float: left;
+}
+.nav3 li{
+	width: auto;
+	padding: 0 20px;
+}
+.nav2 .nav3 span.li4Active:hover{
+	color: #02a0ea;
+	cursor: pointer;
+}
+
+.nav2 .li4title{
+	font-size: 16px;
+}
+
+/*footer公用底部*/
+.footer-box{
+	width: 100%;
+	height: auto;
+	background: #fff;
+}
+.footer{
+	width: 1200px;
+	height: 257px;
+	margin: 0 auto;
+}
+.footer .hh2{
+	display: block;
+	width: 100%;
+	font-size: 26px;
+	text-align: center;
+	height: 70px;
+	line-height: 80px;
+	color: #02a0ea;
+	padding: 0;
+	margin: 0;
+}
+.footer .hh4{
+	width: 100%;
+	font-size: 16px;
+	line-height: 50px;
+	color: #333;
+}
+.footer-list{
+	width: 100%;
+	line-height: 34px;
+	color: #333;
+	font-size: 14px;
+	color: #666;
+}
+.footer-list li{
+	width: auto;
+	height: auto;
+	float: left;
+	padding-right: 110px;
+}
+.footer-list li:last-child{
+	float: right;
+	width: 110px;
+	padding: 0;
+	padding-top: 30px;
+	line-height: 18px;
+	text-align: center;
+}
+.footer-list li:last-child img{
+	display: block;
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+}
+.footer-bottom{
+	width: 100%;
+	height: 42px;
+	text-align: center;
+	background: #333333;
+	color: #fff;
+	line-height: 40px;
+	font-size: 12px;
+}
+.footer-bottom i{
+	display: inline-block;
+	width: 30px;
+	height: 18px;
+	background: url(../../src/assets/img/web/beian.png) no-repeat center center;
+}
+/*滚动轴效果*/
+.scroll-hide{
+	/*-webkit-transform: translateY(150px);
+	-moz-transform: translateY(150px);
+	-ms-transform: translateY(150px);
+	-o-transform: translateY(150px);
+	transform: translateY(150px);*/
+}
+/*.scroll-hide>span{
+	opacity: 0;
+	display: inline-block;
+}*/
+.scroll-show>span{
+	/*transition: all 2s; 
+	opacity: 1;*/
+	/*-webkit-transform: translateY(-150px);
+	-moz-transform: translateY(-150px);
+	-ms-transform: translateY(-150px);
+	-o-transform: translateY(-150px);
+	transform: translateY(-150px);*/
+}
+/**/
+.change-word{
+	position: relative;
+}
+.change-word:hover .xiala-list{
+	display: block;
+}
+.xiala-list{
+	display: none;
+	width: 100%;
+	height: auto;
+	line-height: 18px;
+	border: 1px solid #ccc;
+	position: absolute;
+	left: 0;
+	top: 70px;
+	background: #fff;
+	z-index: 100000;
+}
+.xiala-list>li{
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	color: #666;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer;
+}
+.xiala-list>li a{
+	display: block;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+	color: #666;
+	font-size: 14px;
+	text-align: center;
+	cursor: pointer;
+}
+.xiala-list>li:hover{
+	background: #ccc;
+	color: #fff;
+}

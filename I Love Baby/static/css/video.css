@@ -1,0 +1,50 @@
+.cat-box{
+ margin-top: 22px;
+}
+.li-left-content{
+	width: 140px;
+	height: 90px;
+	position: relative;
+	float: left;
+}
+.video-box li .li-left-content img{
+	width: 140px;
+	height: 90px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+	cursor: pointer;
+}
+.video-box li .li-left-content .videoPlayBtn{
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+	top: 20px;
+	z-index: 2;
+	cursor: pointer;
+}
+.li-left-content video{
+	width: 140px;
+	height: 90px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 3;
+}
+.delVideo{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	z-index: 4;
+}
+.list-box li .delVideo img{
+	width: 100%;
+	height: 100%;
+}
+

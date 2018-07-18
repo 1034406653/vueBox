@@ -1,0 +1,429 @@
+/*主要内容*/
+html, body {
+    height: auto;
+    width: 100%;
+}
+
+.l-banner-1 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 900px;
+    border-bottom: 2px solid #fff;
+    background: url(../../src/assets/img/web/index/l-banner-1.jpg);
+    background-size: 100% 100%;
+    overflow: hidden;
+}
+
+.l-banner-1-box {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #1a7add;
+    opacity: 0.5;
+}
+
+.l-banner-1-text {
+    width: 1160px;
+    height: 540px;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    left: 50%;
+    top: 160px;
+    margin-left: -580px;
+    z-index: 2;
+}
+
+.l-banner-1-text-bg {
+    width: 1010px;
+    height: 160px;
+    background: url(../../src/assets/img/web/index/l-banner-1-text-bg.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -505px;
+    top: 150px;
+}
+
+.l-banner-1-text .hh3 {
+    width: 100%;
+    line-height: 100px;
+    font-size: 34px;
+    font-weight: normal;
+    font-family: "rage italic";
+}
+
+.l-banner-1-text .hh3 {
+    width: 100%;
+    line-height: 100px;
+    font-size: 34px;
+    font-weight: normal;
+}
+
+.l-banner-1-text .p1 {
+    line-height: 32px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.l-banner-1-text .p2 {
+    padding-top: 176px;
+    line-height: 40px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.l-banner-2 {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    border-bottom: 2px solid #fff;
+    background: url(../../src/assets/img/web/index/l-banner-2.jpg);
+    background-size: 100% 100%;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+}
+
+.l-banner-2-box1 {
+    width: 1200px;
+    height: 440px;
+    background: #1060a3;
+    opacity: 0.5;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -600px;
+    top: 200px;
+    z-index: 2;
+}
+
+.l-banner-2-box2 {
+    width: 1150px;
+    height: 408px;
+    background: #162f45;
+    color: #fff;
+    opacity: 0.5;
+    position: absolute;
+    left: 50%;
+    margin-left: -575px;
+    top: 215px;
+    z-index: 1;
+}
+
+.l-banner-2 .hh3 {
+    line-height: 130px;
+    font-size: 34px;
+    font-weight: normal;
+}
+
+.l-banner-2 p {
+    line-height: 54px;
+    font-size: 20px;
+}
+
+.l-banner-2 p > span {
+    display: inline-block;
+    width: 50%;
+}
+
+.l-banner-2-text {
+    position: absolute;
+    width: 1150px;
+    height: 408px;
+    left: 50%;
+    margin-left: -575px;
+    top: 215px;
+    color: #fff;
+    z-index: 3;
+}
+
+.l-banner-3 {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    border-bottom: 2px solid #fff;
+    background: url(../../src/assets/img/web/index/l-banner-4.jpg);
+    background-size: 100% 100%;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+}
+
+.l-banner-3 .hh3 {
+    line-height: 140px;
+    font-size: 34px;
+    font-weight: normal;
+    margin-top: 50px;
+}
+
+.l-banner-3 p {
+    line-height: 44px;
+    font-size: 20px;
+}
+
+.l-banner-4 {
+    position: relative;
+    width: 100%;
+    height: 800px;
+    border-bottom: 2px solid #fff;
+    background: url(../../src/assets/img/web/index/l-banner-3.jpg);
+    background-size: 100% 100%;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+}
+
+.l-banner-4-bg {
+    width: 1200px;
+    height: 590px;
+    margin: 0 auto;
+    margin-top: 90px;
+    background: #000;
+    opacity: 0.5;
+}
+
+.l-banner-4-box {
+    position: absolute;
+    width: 1200px;
+    height: 590px;
+    left: 50%;
+    margin-left: -600px;
+    top: 90px;
+    text-align: center;
+}
+
+.l-banner-4 .hh3 {
+    line-height: 130px;
+    font-size: 34px;
+    font-weight: normal;
+}
+
+.l-banner-4 .hh4 {
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.l-banner-4 .hh4 span {
+    float: left;
+    width: 50%;
+    cursor: pointer;
+    text-align: right;
+    padding: 0 30px 0 0;
+}
+
+.l-banner-4 .hh4 span:last-child {
+    padding: 0 0 0 30px;
+    text-align: left;
+}
+
+.l-banner-4 .hh4 span.active {
+    color: #02a0ea;
+}
+
+.l-banner-4 .l-banner-4-div-box {
+    width: 1140px;
+    height: 360px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.l-banner-4 .l-banner-4-div {
+    width: 1140px;
+    height: 360px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    transition: .8s ease-in-out;
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    -ms-transition: .8s ease-in-out;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+
+}
+
+.l-banner-4 .l-banner-4-div-2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    color: black;
+    transition: .8s ease-in-out;
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    -ms-transition: .8s ease-in-out;
+    text-align: center;
+    transform: rotateX(-180deg);
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    opacity: 0;
+
+}
+
+.l-banner-4-div-box .ul-bg {
+    opacity: 0.8;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.l-banner-4-div-box ul {
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.l-banner-4-div-box li {
+    float: left;
+    width: 280px;
+    height: 170px;
+    position: relative;
+}
+
+.l-banner-4-div-box li div {
+    width: 100%;
+    height: 170px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    transition: .8s ease-in-out;
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    -ms-transition: .8s ease-in-out;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    background: url(../../src/assets/img/web/index/a-banner4-1.png) no-repeat center center;
+}
+
+.l-banner-4-div-box li p {
+    text-align: center;
+    line-height: 170px;
+    font-size: 24px;
+    color: #02A0EA;
+    transition: .8s ease-in-out;
+    -webkit-transition: .8s ease-in-out;
+    -moz-transition: .8s ease-in-out;
+    -ms-transition: .8s ease-in-out;
+    text-align: center;
+    transform: rotateX(180deg);
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+}
+
+.l-banner-4-div-box li:hover div {
+    transform: rotateX(-180deg);
+    -webkit-transform: rotateX(-180deg);
+    -moz-transform: rotateX(-180deg);
+    -ms-transform: rotateX(-180deg);
+    -webkit-filter: sepia(100%);
+    /* Chrome, Safari, Opera */
+    filter: sepia(100%);
+}
+
+.l-banner-4-div-box li:hover p {
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    -ms-transform: rotateX(0deg);
+}
+
+.l-banner-4-div-box .banner4-2 div {
+    background: url(../../src/assets/img/web/index/a-banner4-2.png) no-repeat center center;
+}
+
+.l-banner-4-div-box .banner4-3 div {
+    background: url(../../src/assets/img/web/index/a-banner4-3.png) no-repeat center center;
+}
+
+.l-banner-4-div-box .banner4-4 div {
+    background: url(../../src/assets/img/web/index/a-banner4-4.png) no-repeat center center;
+}
+
+.l-banner-4-div-box .banner4-5 div {
+    background: url(../../src/assets/img/web/index/a-banner4-5.png) no-repeat center center;
+}
+
+.l-banner-4-div-box .banner4-6 div {
+    background: url(../../src/assets/img/web/index/a-banner4-6.png) no-repeat center center;
+}
+
+.l-banner-4-div-box .banner4-7 div {
+    background: url(../../src/assets/img/web/index/a-banner4-7.png) no-repeat center center;
+}
+
+.l-banner-4-div-box .banner4-8 div {
+    background: url(../../src/assets/img/web/index/a-banner4-8.png) no-repeat center center;
+}
+
+.l-banner-4-div-2 ul li {
+    width: 224px;
+}
+
+.l-banner-4-div-2 .banner4-1 div {
+    background: url(../../src/assets/img/web/index/b-banner4-1.png) no-repeat center center;
+}
+
+.l-banner-4-div-2 .banner4-2 div {
+    background: url(../../src/assets/img/web/index/b-banner4-2.png) no-repeat center center;
+}
+
+.l-banner-4-div-2 .banner4-3 div {
+    background: url(../../src/assets/img/web/index/b-banner4-3.png) no-repeat center center;
+}
+
+.l-banner-4-div-2 .banner4-4 div {
+    background: url(../../src/assets/img/web/index/b-banner4-4.png) no-repeat center center;
+}
+
+.l-banner-4-div-2 .banner4-5 div {
+    background: url(../../src/assets/img/web/index/b-banner4-5.png) no-repeat center center;
+}
+
+.l-banner-4-div-2 .banner4-6 div {
+    background: url(../../src/assets/img/web/index/b-banner4-6.png) no-repeat center center;
+}
+
+.l-banner-4-div-2 .banner4-7 div {
+    background: url(../../src/assets/img/web/index/b-banner4-7.png) no-repeat center center;
+}
+
+.l-banner-4-div-2 .banner4-8 div {
+    background: url(../../src/assets/img/web/index/b-banner4-8.png) no-repeat center center;
+}
+
+.l-banner-4-div-2 .banner4-9 div {
+    background: url(../../src/assets/img/web/index/b-banner4-9.png) no-repeat center center;
+}
+
+.l-banner-4-div-2 .banner4-10 div {
+    background: url(../../src/assets/img/web/index/b-banner4-10.png) no-repeat center center;
+}
+ 
+
+

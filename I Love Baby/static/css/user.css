@@ -1,0 +1,61 @@
+.phone-number input{
+	width: 160px;
+}
+/*弹窗*/
+#bannedModal input{
+	width: 100px;
+	height: 24px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	margin: 0 10px;
+	text-align: center;
+	color: 999;
+	font-size: 14px;
+}
+#bannedModal span {
+	font-size: 14px;
+	color: #666;
+}
+#bannedModal .reason-box input,#clockedModal .reason-box input {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 16px;
+    display: inline-block;
+    color: #666;
+    font-size: 14px;
+    text-align: left;
+}
+
+#bannedModal .reason-box,#clockedModal .reason-box{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 10px;
+}
+#bannedModal .reason-box span,#clockedModal .reason-box span{
+	color: red;
+	font-size: 14px;
+	display: inline-block;
+	padding-left: 10px;
+}
+.pageBox{
+	width: 100%;
+	height: 60px;
+	position: relative;
+	overflow: hidden;
+}
+.totalNum{
+	width: auto;
+	height: 60px;
+	line-height: 60px;
+	font-size: 16px;
+	color: #666;
+	position: absolute;
+	left: 0;
+	top: 0;
+}

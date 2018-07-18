@@ -1,0 +1,6 @@
+{
+	"SourceDir": "src",
+	"DistributionDir": "build",
+	"BuildCommand": "cnpm run-script build",
+	"StartCommand": "cnpm run-script start"
+}

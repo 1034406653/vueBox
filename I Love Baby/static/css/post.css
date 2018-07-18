@@ -1,0 +1,338 @@
+/*筛选*/
+
+.post-box .filter {
+  width: 100%;
+  height: auto;
+}
+.post-box .select-box {
+  width: auto;
+  float: left;
+  padding-right: 30px;
+}
+.post-box .select-box .title {
+  width: auto;
+  float: left;
+  height: 76px;
+  color: #333;
+  font-size: 14px;
+  padding-right: 10px;
+  line-height: 82px;
+}
+.post-box .select-box>input {
+  float: left;
+  border: 1px solid #e8eaec;
+  border-top-color: #898b8c;
+  border-bottom-color: #e3e3e3;
+  background: #f5f8fa;
+  width: 100px;
+  height: 32px;
+  line-height: 30px;
+  padding: 0 10px;
+  margin-top: 25px;
+}
+.post-box .xiala-box {
+  float: left;
+  width: 100px;
+  height: 32px;
+  margin-top: 25px;
+  font-size: 12px;
+  color: #999;
+  line-height: 30px;
+}
+.post-box .calendar-box {
+  float: left;
+  border: 1px solid #e8eaec;
+  border-top-color: #898b8c;
+  border-bottom-color: #e3e3e3;
+  background: #f5f8fa;
+  width: 160px;
+  height: 32px;
+  line-height: 30px;
+  margin-top: 25px;
+  font-size: 12px;
+  color: #999;
+  cursor: pointer;
+  position: relative;
+}
+.post-box .calendar-box input {
+  width: 100%;
+  height: 100%;
+  text-indent: 10px;
+  color: #999;
+  font-size: 12px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background: transparent;
+  cursor: pointer;
+}
+.post-box .calendar-box img {
+  position: absolute;
+  right: 5px;
+  top: 6px;
+}
+.post-box .refresh-btn, .search-btn {
+  float: right;
+  width: 40px;
+  height: 32px;
+  background: #0e9be0;
+  border-radius: 5px;
+  margin: 24px 0 0 6px;
+  cursor: pointer;
+}
+.post-box .search-btn img {
+  height: 22px;
+}
+.post-box .refresh-btn img, .search-btn img {
+  margin: 5px auto;
+}
+.post-box .content {
+  width: 100%;
+  height: auto;
+  overflow-x: auto;
+}
+.post-box table {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.post-box thead {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  font-size: 0;
+}
+.post-box th {
+  height: 54px;
+  font-size: 16px;
+  text-align: center;
+  background: #19b3e5;
+  font-weight: normal;
+  color: #fff;
+  line-height: 54px;
+  border: none;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.post-box td {
+  color: #808080;
+  font-size: 12px;
+  height: 54px;
+  text-align: center;
+  line-height: 54px;
+  padding: 0 10px;
+  display: inline-block;
+  box-sizing: border-box;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.post-box table tr:nth-of-type(2n) {
+  background: #fff;
+  overflow: hidden;
+  width: 100%;
+}
+.post-box table tr:nth-of-type(2n+1) {
+  width: 100%;
+  overflow: hidden;
+  background: #e4e7eb;
+}
+.post-box table tr td:last-child span {
+  cursor: pointer;
+  display: inline-block;
+  width: auto;
+  margin: 0 8px;
+  color: #19b3e5;
+}
+
+/*普通帖子*/
+
+.post tr td:nth-of-type(9n+1) {
+  width: 15%;
+}
+.post tr td:nth-of-type(9n+2) {
+  width: 10%;
+}
+.post tr td:nth-of-type(9n+3) {
+  width: 10%;
+}
+.post tr td:nth-of-type(9n+4) {
+  width: 12%;
+}
+.post tr td:nth-of-type(9n+5) {
+  width: 10%;
+}
+.post tr td:nth-of-type(9n+6) {
+  width: 10%;
+}
+.post tr td:nth-of-type(9n+7) {
+  width: 10%;
+}
+.post tr td:nth-of-type(9n+8) {
+  width: 10%;
+}
+.post tr td:nth-of-type(9n+9) {
+  width: 13%;
+}
+
+/*社交帖子*/
+
+.social-box tr td:nth-of-type(10n+1) {
+  width: 10%;
+}
+.social-box tr td:nth-of-type(10n+2) {
+  width: 12%;
+}
+.social-box tr td:nth-of-type(10n+3) {
+  width: 10%;
+}
+.social-box tr td:nth-of-type(10n+4) {
+  width: 10%;
+}
+.social-box tr td:nth-of-type(10n+5) {
+  width: 11%;
+}
+.social-box tr td:nth-of-type(10n+6) {
+  width: 11%;
+}
+.social-box tr td:nth-of-type(10n+7) {
+  width: 8%;
+}
+.social-box tr td:nth-of-type(10n+8) {
+  width: 8%;
+}
+.social-box tr td:nth-of-type(10n+9) {
+  width: 8%;
+}
+.social-box tr td:nth-of-type(10n+10) {
+  width: 12%;
+}
+
+/*用户管理*/
+
+.user-box tr td:nth-of-type(8n+1) {
+  width: 13%;
+}
+.user-box tr td:nth-of-type(8n+2) {
+  width: 11%;
+}
+.user-box tr td:nth-of-type(8n+3) {
+  width: 7%;
+}
+.user-box tr td:nth-of-type(8n+4) {
+  width: 13%;
+}
+.user-box tr td:nth-of-type(8n+5) {
+  width: 16%;
+}
+.user-box tr td:nth-of-type(8n+6) {
+  width: 12%;
+}
+.user-box tr td:nth-of-type(8n+7) {
+  width: 12%;
+}
+.user-box tr td:nth-of-type(8n+8) {
+  width: 16%;
+}
+
+/*消息管理*/
+
+.news-box tr td:nth-of-type(8n+1) {
+  width: 10%;
+}
+.news-box tr td:nth-of-type(8n+2) {
+  width: 10%;
+}
+.news-box tr td:nth-of-type(8n+3) {
+  width: 15%;
+}
+.news-box tr td:nth-of-type(8n+4) {
+  width: 50%;
+}
+.news-box tr td:nth-of-type(8n+5) {
+  width: 15%;
+}
+
+/*管理员处理的普通帖子*/
+
+.admin-post tr td:nth-of-type(11n+1) {
+  width: 9%;
+}
+.admin-post tr td:nth-of-type(11n+2) {
+  width: 9%;
+}
+.admin-post tr td:nth-of-type(11n+3) {
+  width: 9%;
+}
+.admin-post tr td:nth-of-type(11n+4) {
+  width: 7%;
+}
+.admin-post tr td:nth-of-type(11n+5) {
+  width: 7%;
+}
+.admin-post tr td:nth-of-type(11n+6) {
+  width: 8%;
+}
+.admin-post tr td:nth-of-type(11n+7) {
+  width: 9%;
+}
+.admin-post tr td:nth-of-type(11n+8) {
+  width: 11%;
+}
+.admin-post tr td:nth-of-type(11n+9) {
+  width: 12%;
+}
+.admin-post tr td:nth-of-type(11n+10) {
+  width: 9%;
+}
+.admin-post tr td:nth-of-type(11n+11) {
+  width: 10%;
+}
+
+/*管理员处理的社交帖子*/
+
+.admin-social tr td:nth-of-type(12n+1) {
+  width: 8%;
+}
+.admin-social tr td:nth-of-type(12n+2) {
+  width: 8%;
+}
+.admin-social tr td:nth-of-type(12n+3) {
+  width: 8%;
+}
+.admin-social tr td:nth-of-type(12n+4) {
+  width: 7%;
+}
+.admin-social tr td:nth-of-type(12n+5) {
+  width: 8%;
+}
+.admin-social tr td:nth-of-type(12n+6) {
+  width: 7%;
+}
+.admin-social tr td:nth-of-type(12n+7) {
+  width: 8%;
+}
+.admin-social tr td:nth-of-type(12n+8) {
+  width: 8%;
+}
+.admin-social tr td:nth-of-type(12n+9) {
+  width: 10%;
+}
+.admin-social tr td:nth-of-type(12n+10) {
+  width: 10%;
+}
+.admin-social tr td:nth-of-type(12n+11) {
+  width: 8%;
+}
+.admin-social tr td:nth-of-type(12n+12) {
+  width: 10%;
+}

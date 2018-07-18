@@ -1,0 +1,220 @@
+.detail-content .post-box{
+	width: 100%;
+	height: auto;
+	background: #fff;
+	padding: 0 28px;
+	padding-top: 30px;
+}
+.detail-content .post-title{
+	width: 100%;
+	height: auto;
+	line-height: 30px;
+	padding-bottom: 20px;
+	color: #333;
+	font-size: 22px;
+	text-align: center;
+	background: #fff;
+}
+.detail-content .post-information{
+	width: 100%;
+	height: 14px;
+	line-height: 14px;
+	color: #999;
+	font-size: 12px;
+	justify-content:center;
+	display: flex;
+}
+.detail-content .post-information div{
+	padding: 0 15px;
+}
+.detail-content .post-content{
+	width: 100%;
+	height: auto;
+	line-height: 34px;
+	color: #666;
+	font-size: 16px;
+	text-indent: 32px;
+	padding-top: 24px;
+	text-align: left;
+}
+.detail-content .selectedOne{
+	color: #0E9BE0;
+	cursor: pointer;
+}
+.detail-content .pic-box{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.detail-content .pic-box img{
+	height: 200px;
+	margin: 10px 12px;
+	float: left;
+}
+.detail-content video{
+	width: auto;
+	max-width: 600px;
+	height: 300px;
+	margin: 0 auto;
+}
+/*回复列表*/
+.detail-content .report-list1{
+	width: 100%;
+	height: auto;
+	margin-top: 8px;
+	padding: 0 28px;
+	background: #fff;
+}
+.detail-content .report-list1 li{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.detail-content .report-list1 .user-information{
+	width: 100%;
+	height: 80px;
+	overflow: hidden;
+}
+.detail-content .report-list1 .user-information>img{
+	float: left;
+	width: 44px;
+	height: 44px;
+	margin-right: 10px;
+	margin-top: 18px;
+}
+.detail-content .report-list1 .user-main{
+	width: 500px;
+	height: 80px;
+	float: left;
+	padding-top: 12px;
+}
+.detail-content .report-list1 .user-top{
+	width: 100%;
+	height: 38px;
+	overflow: hidden;
+}
+.detail-content .report-list1 .user-name{
+	width: auto;
+	float: left;
+	height: 38px;
+	color: #666;
+	font-size: 16px;
+	line-height: 38px;
+}
+.detail-content .report-list1 .grade{
+	width: 18px;
+	height: 16px;
+	margin: 11px 6px;
+	position: relative;
+	float: left;
+}
+.detail-content .report-list1 .grade img{
+	width: 18px;
+	height: 16px;
+}
+.detail-content .report-list1 .grade span{
+	width: 18px;
+	height: 16px;
+	line-height: 16px;
+	color: #fff;
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	text-align: center;
+	font-size: 12px;
+}
+.detail-content .report-list1 .user-bottom{
+	width: 100%;
+	height: 16px;
+	line-height: 16px;
+	color: #a0a0a0;
+	font-size: 16px;
+	overflow: hidden;
+}
+.detail-content .report-list1 .user-bottom>div{
+	float: left;
+	width: auto;
+	height: 16px;
+	padding-right: 14px;
+}
+.detail-content .report-list1 .report-content{
+	text-align: left;
+	width: 100%;
+	height: auto;
+	font-size: 16px;
+	color: #666;
+	line-height: 24px;
+	padding-bottom: 8px;
+}
+.detail-content .report-list1 .report-content .del{
+	width: auto;
+	height: auto;
+	font-size: 14px;
+	color: #26b6eb;
+	margin-left: 30px;
+	cursor: pointer;
+	padding: 0 10px;
+}
+.detail-content .replylist1Img{
+	height: 200px;
+}
+.detail-content .report-list2{
+	width: 100%;
+	height: auto;
+	background: #e6e6e6;
+	font-size: 14px;
+	color: #666;
+	line-height: 24px;
+	margin-bottom: 14px;
+	text-align: left;
+}
+.detail-content .report-list2 li{
+	padding: 4px 22px;
+}
+
+.detail-content .reply-name{
+	padding: 0 8px;
+}
+.detail-content .said-name{
+	color: #26b6eb;
+}
+.detail-content .report-list2 .delBtn{
+	width: auto;
+	height: auto;
+	color: #26b6eb;
+	margin-left: 30px;
+	cursor: pointer;
+	padding: 0 10px;
+}
+.detail-content .more-report{
+	width: 100%;
+	height: 54px;
+	line-height: 54px;
+	background: #fff;
+	margin-top: 8px;
+	font-size: 14px;
+	color: #26b6eb;
+	text-align: center;
+	cursor: pointer;
+}
+/*删除评论原因*/
+.detail-content .delreplyModal input{
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	width: 80%;
+	margin: 0 auto;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 16px;
+	display: inline-block;
+	color: #666;
+	font-size: 14px;
+}
+.detail-content .delreplyModal .content span{
+	color: red;
+	font-size: 14px;
+	display: inline-block;
+	padding-left: 10px;
+}
+
