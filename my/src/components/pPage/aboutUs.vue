@@ -116,6 +116,7 @@
 </template>
 <script>
   export default {
+  	/*aaa*/
     mounted() {
       var map = new BMap.Map("container"); // 创建Map实例
       var poi = new BMap.Point(120.17230, 30.323299);
