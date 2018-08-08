@@ -79,7 +79,7 @@
         document.getElementById("startUpload").addEventListener('click', function(event) {
           that.uploadVideo("video");
         });
-        document.getElementById("video").addEventListener('loadedmetadata', function() {
+        document.getElementById("video").addEventListener('loadeddata', function() {
           let video = document.getElementById("video");
           setTimeout(function() {
             that.videoEleJson.duration = video.duration;
@@ -145,7 +145,7 @@
           let fileName = file.name;
           let point = fileName.lastIndexOf(".");
           let type = fileName.substr(point + 1).toLowerCase();
-          if(type == "mp4" || type == "3gp" || type == "asx" || type == "mov" || type == "rm" || type == "ram" || type == "rmvb" ) {
+          if(type == "mp4" || type == "3gp" || type == "asx" || type == "mov" || type == "rm" || type == "ram" || type == "rmvb") {
             let albumVideoKey = encodeURIComponent(albumName) + '/';
             let upTime = new Date();
             let videoKey = albumVideoKey + upTime.getTime() + "." + type;
@@ -202,9 +202,10 @@
                       $(".article-hint").css("color", "green");
                       that.hint = "Success";
                       setTimeout(function() {
-                        $(".article-hint").css("color", "red");
-                        that.hint = "";
-                      }, 5000)
+                        that.$router.push({
+                          path: "video"
+                        })
+                      }, 1000)
                     }
                   }
                 })

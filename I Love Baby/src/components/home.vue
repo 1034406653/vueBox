@@ -184,6 +184,10 @@
           restClassName()
           this.lists[1].Li1className = "li1-active";
           this.lists[1].list2[0].Li2className = "li2-active";
+        } else if(this.$route.path == "/home/user-detail") {
+          restClassName()
+          this.lists[1].Li1className = "li1-active";
+          this.lists[1].list2[0].Li2className = "li2-active";
         } else if(this.$route.path == "/home/news") {
           restClassName()
           this.lists[2].Li1className = "li1-active";
