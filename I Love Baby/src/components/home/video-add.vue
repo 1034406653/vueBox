@@ -90,7 +90,6 @@
             canvas.height = video.videoHeight;
             canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
             that.videoImgJson.file = canvas.toDataURL("image/jpg").slice(canvas.toDataURL("image/jpg").indexOf(",") + 1);
-            console.log(that.videoImgJson.file);
             let imgStr = JSON.stringify(that.videoImgJson);
             $.ajax({
               url: that.baseUrl + "uploadFile",
@@ -103,6 +102,7 @@
               contentType: "application/json",
               success: function(rex) {
                 if(rex.code == "200") {
+                	console.log(rex.data.imageUrl);
                   that.videoEleJson.coverUrl = rex.data.imageUrl;
                   let videoEleStr = JSON.stringify(that.videoEleJson)
                   $.ajax({

@@ -125,9 +125,10 @@
                         $(".article-hint").css("color", "green");
                         that.hint = "Success";
                         setTimeout(function() {
-                          $(".article-hint").css("color", "red");
-                          that.hint = "";
-                        }, 5000)
+                          that.$router.push({
+                          path: "artical"
+                        })
+                        }, 1000)
                       }
                     }
                   })
