@@ -72,7 +72,7 @@
           editor = K.create('#editor_id', {
             fixToolBar: true,
             langType: 'en',
-            items: ['source', '|', 'undo', 'redo', '|', 'preview','cut', 'copy', 'paste', '|', 'justifyleft', 'justifycenter', 'justifyright', 'justifyfull', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image',  'emoticons'],
+            items: ['source', '|', 'undo', 'redo', '|', 'preview','cut', 'copy', 'paste', '|', 'justifyleft', 'justifycenter', 'justifyright', 'justifyfull', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image'],
             uploadJson: that.baseUrl + 'editorUploadFile', //上传图片的java代码，只不过放在jsp中
           });
         });
