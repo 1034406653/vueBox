@@ -28,7 +28,7 @@
         sessionStorage.setItem("totalUserName", userName);
         let passWord = $(".passWord").val();
         $.ajax({
-          url: "https://testpay.boyuanpay.com/petadmin-en/api/login",
+          url: "https://peten.boyuanpay.com/petadmin-en/api/login",
           type: "POST",
           data: "{'username':'" + userName + "','password':'" + passWord + "'}",
           dataType: "json",
@@ -39,7 +39,7 @@
             } else if(rex.code == "200") {
               sessionStorage.setItem('liangliang', rex.data.token + "liangliang");
               sessionStorage.setItem('sysAdminId', rex.data.sysAdminId);
-              sessionStorage.setItem('baseUrl', "https://testpay.boyuanpay.com/petadmin-en/api/");
+              sessionStorage.setItem('baseUrl', "https://peten.boyuanpay.com/petadmin-en/api/");
               sessionStorage.setItem('loginEnter', userName);
               that.$router.push({
                 path: '/home'

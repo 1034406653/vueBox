@@ -1,0 +1,81 @@
+.sensitive-box{
+	padding-top: 20px;
+	padding-bottom: 40px;
+}
+.sensitive-box .sensitive-main{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.sensitive-box .selectLi{
+	width: 100%;
+	height: 80px;
+	padding: 20px 30px;
+}
+.sensitive-box .selectLi>input{
+	width: calc( 100% - 160px );
+	height: 40px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	padding: 0 20px;
+	color: #666;
+	font-size: 16px;
+	line-height: 40px;
+	float: left;
+}
+.sensitive-box .selectLi>span{
+	float: left;
+	width: 50px;
+	height: 40px;
+	background: #19b3e5;
+	border-radius: 10px;
+	text-align: center;
+	color: #fff;
+	font-size: 16px;
+	line-height: 40px;
+	margin-left: 30px;
+	cursor: pointer;
+	overflow: hidden;
+}
+.sensitive-box .selectLi>span>img{
+	width: 26px;
+	height: 26px;
+	margin: 7px 12px;
+}
+.sensitive-box .textbox{
+	width: calc( 100% - 60px );
+	height: auto;
+	margin: 0 auto;
+	background: #eee;
+	border-radius: 10px;
+	color: #333;
+	overflow: hidden;
+}
+.sensitive-box .textbox>span{
+	width: auto;
+	float: left;
+	margin: 10px 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 16px;
+	padding-right: 20px;
+	position: relative;
+}
+.sensitive-box .textbox>span>img{
+	position: absolute;
+	right: 0;
+	top: 7px;
+	width: 16px;
+	height: 16px;
+	cursor: pointer;
+	display: none;
+}
+.sensitive-box .textbox>span:hover img{
+	display: block;
+}
+.sensitive-box .textbox>span>span{
+	float: left;
+	width: auto;
+	height: 30px;
+}
+

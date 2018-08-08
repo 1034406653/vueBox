@@ -58,7 +58,7 @@
         },
         videoImgJson: {
           type: "11",
-          ext: "png",
+          ext: "jpg",
           file: ""
         },
         videoProgress: "",
@@ -89,7 +89,8 @@
             canvas.width = video.videoWidth;
             canvas.height = video.videoHeight;
             canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
-            that.videoImgJson.file = canvas.toDataURL("image/png").slice(canvas.toDataURL("image/png").indexOf(",") + 1);
+            that.videoImgJson.file = canvas.toDataURL("image/jpg").slice(canvas.toDataURL("image/jpg").indexOf(",") + 1);
+            console.log(that.videoImgJson.file);
             let imgStr = JSON.stringify(that.videoImgJson);
             $.ajax({
               url: that.baseUrl + "uploadFile",

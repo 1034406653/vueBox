@@ -9,7 +9,7 @@
       <ul class="dogUl">
         <li v-for="(item,index) in dogList">
           <div class="delVideo" @click="delVideo(item.userPetCuringId)"> <img src="../../assets/web/del-btn.png" /> </div>
-          <div class="li-left-content"> <img src="../../assets/web/video-play.png" :videoUrl='item.playUrl' class="coverImg videoPlayBtn" /> <img :src='item.coverUrl' :videoUrl='item.playUrl' class="coverImg" /> </div>
+          <div class="li-left-content"> <!--<img src="../../assets/web/video-play.png" :videoUrl='item.playUrl' class="coverImg videoPlayBtn" />--> <img :src='item.coverUrl' :videoUrl='item.playUrl' class="coverImg" /> </div>
           <div class="li-right">
             <div class="li-right-text"> <span>Title：</span> <span :title='item.title'>{{item.title}}</span> </div>
             <div class="li-right-content" :title='item.description'> <span>Description：{{item.description}}</span> </div>
@@ -33,7 +33,9 @@
       <ul class="catUl">
         <li v-for="(item,index) in catList">
           <div class="delVideo" @click="delVideo(item.userPetCuringId)"> <img src="../../assets/web/del-btn.png" /> </div>
-          <div class="li-left-content"> <img src="../../assets/web/video-play.png" :videoUrl='item.playUrl' class="coverImg videoPlayBtn" /> <img :src='item.coverUrl' :videoUrl='item.playUrl' class="coverImg" /> </div>
+          <div class="li-left-content"> 
+          	<img src="../../assets/web/video-play.png" :videoUrl='item.playUrl' class="coverImg videoPlayBtn" /> 
+          	<img :src='item.coverUrl' :videoUrl='item.playUrl' class="coverImg" /> </div>
           <div class="li-right">
             <div class="li-right-text"> <span>Title：</span> <span :title='item.title'>{{item.title}}</span> </div>
             <div class="li-right-content" :title='item.description'> <span>Description：{{item.description}}</span> </div>
