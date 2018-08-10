@@ -14,21 +14,14 @@
 			<div class="article-hint">{{hint}}</div>
 		</div>
 		<div id="delWordModal"></div>
-		<!--测试编辑框-->
-		<editor id="editor_id" height="500px" width="700px" :content="editorText" :afterChange="afterChange()" pluginsPath="/static/kindeditor/plugins/" :loadStyleMode="false" @on-content-change="onContentChange"></editor>
-		<!--测试编辑框-->
+		
 	</div>
 </template>
 <script>
 	import Vue from 'vue'
 	import { Modal } from '../../../static/js/modal.js'
-	/*测试编辑框*/
-	import VueKindEditor from 'vue-kindeditor'
-	import 'kindeditor/kindeditor-all-min.js'
-	import 'kindeditor/themes/default/default.css'
-	/*测试编辑框*/
+	import { quillEditor } from 'vue-quill-editor'
 
-	Vue.use(VueKindEditor)
 	var delWordModal = "";
 	export default {
 		data() {
@@ -39,26 +32,17 @@
 				textBoxShow: false,
 				searchWordData: [],
 				hint: "",
-				/*测试编辑框*/
-
-				editorText: '',
-				editorText2: '',
-				/*测试编辑框*/
-
+				content: null,
+				editorOption: {}
 			}
 		},
 		methods: {
-			/*测试编辑框*/
-
-			onContentChange(val) {
-				this.editorText = val
+			onEditorBlur() { //失去焦点事件
 			},
-			onContentChange2(val) {
-				this.editorText2 = val
+			onEditorFocus() { //获得焦点事件
 			},
-			afterChange() {},
-			/*测试编辑框*/
-
+			onEditorChange() { //内容改变事件
+			},
 			searchSensitive() {
 				var that = this;
 				if(this.inputText) {

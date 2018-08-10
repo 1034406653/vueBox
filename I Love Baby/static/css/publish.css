@@ -3,10 +3,9 @@
   height: auto;
   overflow: hidden;
 }
-.publish ul>li {
+.publish ul>li{
   width: 100%;
   height: auto;
-  line-height: 54px;
   background: #fff;
   margin-bottom: 20px;
   overflow: hidden;
@@ -19,6 +18,7 @@
   color: #333;
   font-size: 16px;
   float: left;
+   line-height: 54px;
 }
 .publish ul>li>input {
   width: calc( 100% - 140px);
@@ -26,6 +26,7 @@
   float: left;
   color: #999;
   font-size: 16px;
+  line-height: 54px;
 }
 .publish ul>li>span {
   display: block;
@@ -40,6 +41,7 @@
   height: auto;
   padding-left: 26px;
   text-align: left;
+  line-height: 54px;
 }
 .publish .upload-box img{
   max-height: 300px;
@@ -137,4 +139,8 @@
 	float: right;
 	background: #19b3e5;
 	position: relative;
+}
+/*编辑器*/
+.ql-editor{
+	min-height: 130px;
 }

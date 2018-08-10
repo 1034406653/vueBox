@@ -12,7 +12,9 @@
         <div class="upload-box"> <input type="button" id="filebutton" value="Upload" @click="filebuttonClick" class="addPicture" /> <input type="textfield" id="filepath" value=""> <input class="file" type="file" id="up" style="visibility:hidden;width: 1px;height: 1px;" v-on:change="fileChange($event)" /> <img id="ImgPr" class="file_img" src=""> </div>
       </li>
       <li> <span>Content</span>
-        <div class="textareaBox" style="width: 100%;height: auto;padding: 0 28px;"> <textarea id="editor_id" name="content" style="width:100%;height:320px;"></textarea> </div>
+        
+        <quill-editor v-model="content" ref="myQuillEditor" :options="editorOption" @blur="onEditorBlur($event)" @focus="onEditorFocus($event)" @change="onEditorChange($event)" style="width: 96%;margin: 0 auto;padding-bottom: 30px;">
+		</quill-editor>
       </li>
     </ul>
     <div class="article-hint">{{hint}}</div>
@@ -24,10 +26,7 @@
 </template>
 <script>
   import { imgJSON, getImgStr, readFile } from '../../../static/js/uploadImg.js'
-  import Editor from '../../../static/js/kindeditor/kindeditor-all.js'
-  import EditorEg from '../../../static/js/kindeditor/lang/en.js'
-  var editor;
-  var kBox = null;
+  import { quillEditor } from 'vue-quill-editor'
   export default {
     data() {
       return {
@@ -37,11 +36,11 @@
         articalTitle: "",
         articalAuthor: "",
         postJson: {
-          title: "",
-          content: "",
-          coverImgId: "",
-          author: "",
-          type: "1",
+          title: '',
+          content: '',
+          coverImgId: '',
+          author: '',
+          type: '1',
         },
         imgJson: {
           type: "11",
@@ -49,34 +48,28 @@
           file: ""
         },
         hint: "",
+        content: null,
+				editorOption: {}
       }
     },
     mounted() {
       this.init();
     },
-    beforeRouteEnter(to, from, next) {
-      next(vm => {
-        vm.url = from.path;
-        if(from.path == "/home/artical") {
-          vm.$router.go(0);
-        }
-      })
-    },
+    
     methods: {
       init() {
         var that = this;
         this.postJson.type = this.$route.query.articalType;
-        kBox = null;
-        $(".textareaBox").html('<textarea id="editor_id" name="content" style="width:100%;height:320px;"></textarea>');
-        kBox = KindEditor.ready(function(K) {
-          editor = K.create('#editor_id', {
-            fixToolBar: true,
-            langType: 'en',
-            items: ['source', '|', 'undo', 'redo', '|', 'preview','cut', 'copy', 'paste', '|', 'justifyleft', 'justifycenter', 'justifyright', 'justifyfull', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic', 'underline', 'strikethrough', 'lineheight', 'removeformat', '|', 'image',  'emoticons'],
-            uploadJson: that.baseUrl + 'editorUploadFile', //上传图片的java代码，只不过放在jsp中
-          });
-        });
       },
+      onEditorBlur() { //失去焦点事件
+      	console.log(this.content)
+			},
+			onEditorFocus() { //获得焦点事件
+			},
+			onEditorChange(
+				
+			) { //内容改变事件
+			},
       filebuttonClick() {
         let up = document.getElementById("up");
         up.click();
@@ -88,8 +81,6 @@
       },
       postArtical() {
         var that = this;
-        editor.sync();
-        console.log($("#editor_id").val());
         if(this.imgJson.ext != "" && this.imgJson.file != "") {
           let imgStr = JSON.stringify(imgJSON);
           $.ajax({
@@ -106,10 +97,11 @@
                 that.postJson.coverImgId = rex.data.imageId;
               }
               if(that.postJson.title != "") {
-                if($("#editor_id").val()) {
-                  that.postJson.content = $("#editor_id").val();
+                if(that.content) {
+                  that.postJson.content = that.content;
                   //上传文章
                   let articleStr = JSON.stringify(that.postJson);
+                  console.log(articleStr);
                   $.ajax({
                     url: that.baseUrl + "addPetCuring",
                     type: "POST",
@@ -152,5 +144,5 @@
 </script>
 <style>
   @import url("../../../static/css/publish.css");
-  @import url("../../../static/js/kindeditor/themes/default/default.css");
+
 </style>
